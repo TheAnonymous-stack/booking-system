@@ -1,0 +1,16 @@
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-left-width: 2px;
+    border-left-color: #123C69;
+    border-right-width: 2px;
+    border-right-color: #123C69;
+     
+}
+
+.name {
+    font-weight: 500;
+}

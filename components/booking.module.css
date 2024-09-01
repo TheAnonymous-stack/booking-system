@@ -1,0 +1,44 @@
+.container {
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.name {
+    font-weight: 600;
+    color: #123C69;
+}
+
+
+.options {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.cancel:hover {
+    color: red;
+    font-weight: 700;
+}
+
+.finish:hover{
+    color: green;
+    font-weight: 700;
+}
+
+.completed {
+    color: green;
+    font-weight: 700;
+}
+
+.cancelled {
+    color: red;
+    font-weight: 700;
+}

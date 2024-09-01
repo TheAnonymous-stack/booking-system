@@ -1,0 +1,138 @@
+/*!***************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./app/home.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************/
+.home_container__eduTK {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.home_expertDisplay__gOqe_ {
+    display: flex;
+    flex-direction: row;
+    border-color: #123C69;
+    border-right-width: 2px;
+    border-left-width: 2px;
+}
+
+.home_expertHeader__NdFiE {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-bottom-width: 1px;
+    border-color: black;
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    background-color: #AC3B61;
+
+}
+
+.home_imageContainer__LyKP_ {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background-color: black;
+}
+
+.home_headerText__oEHWq {
+    position: absolute;
+    top: 33%;
+    left: 37%;
+    transform: translate(-25%, -25%);
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+    text-shadow: 2px 4px 10px #AC3B61;
+    
+
+}
+
+.home_description__ASwvQ {
+    position: absolute;
+    top: 49%;
+    left: 23%;
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 4px 10px #AC3B61;
+}
+
+.home_testimonialContainer__s2EBA {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.home_testimonialText__k8Vjz {
+    padding: 50px 20px 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #AC3B61;
+    border-radius: 5px;
+    color: white;
+    font-size: 40px;
+    font-weight: 500px;
+}
+
+.home_testimonialDisplay__6ZPsA {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+    background-color: #EDC7B7;
+}
+
+.home_getStarted__cXV_S {
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    border-color: white;
+    border-width: 1px;
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./components/profile.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************/
+.profile_container__FrwCM {
+    padding: 40px;
+    border-color: #123C69;
+    border-right-width: 2px;
+    border-left-width: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+}
+
+.profile_name__bqOHL {
+    font-weight: bold;
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./components/testimonial.module.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************/
+.testimonial_container__CUCKF {
+    padding: 20px;
+    background-color: #EEE2DC;
+    border-radius: 10px;
+
+}
+
+.testimonial_header__3R29e {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonial_reviewerHeader__KQ9gJ {
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+}

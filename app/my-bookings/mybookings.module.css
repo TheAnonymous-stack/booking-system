@@ -1,0 +1,24 @@
+.container {
+    padding: 20px;
+    flex-direction: column;
+    background-color: #EEE2DC;
+    border-radius: 20px;
+    margin: 20px;
+
+}
+
+.header {
+    font-size: 80px;
+    color: #AC3B61;
+    font-weight: 800;
+    padding: 10px;
+    border-bottom-color: #AC3B61;
+    border-bottom-width: 3px;
+    
+}
+
+.emptyBookings {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}

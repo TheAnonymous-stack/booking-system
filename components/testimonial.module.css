@@ -1,0 +1,19 @@
+.container {
+    padding: 20px;
+    background-color: #EEE2DC;
+    border-radius: 10px;
+
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reviewerHeader {
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+}

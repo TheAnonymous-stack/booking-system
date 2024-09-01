@@ -1,0 +1,9 @@
+.option {
+    padding: 10px;
+    align-items: center;
+    width: 170px;
+}
+
+.option:hover {
+    background-color: lightgray;
+}

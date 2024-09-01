@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #123C69;
+}
+
+.categoryContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    padding-left: 40px;
+}
+
+.categorySubContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.userContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-right: 40px;
+}
+
+.navbarText {
+    color: white;
+    font-weight: 500;
+}
+
+.signOptionsButton {
+    color: white;
+    font-weight: 500;
+    padding: 8px;
+    border-color: white;
+    border-radius: 10px;
+    border-width: 1px;
+
+}
