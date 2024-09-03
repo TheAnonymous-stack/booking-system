@@ -7,7 +7,14 @@
 
 }
 
-.header {
+.headerContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.headerText {
     font-size: 80px;
     color: #AC3B61;
     font-weight: 800;

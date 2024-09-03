@@ -10,7 +10,14 @@
 
 }
 
-.mybookings_header__vp0hd {
+.mybookings_headerContainer__Dbx1M {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.mybookings_headerText__jfi72 {
     font-size: 80px;
     color: #AC3B61;
     font-weight: 800;
@@ -157,3 +164,59 @@
 }
 
 
+/*!************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./components/picker.module.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************/
+.picker_option__GSxn2 {
+    padding: 10px;
+    align-items: center;
+    width: 170px;
+}
+
+.picker_option__GSxn2:hover {
+    background-color: lightgray;
+}
+
+/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./components/searchBar.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************/
+.searchBar_container__Rk8fi {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: #EDC7B7;
+}
+
+.searchBar_filterWrapper__qHFPZ {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.searchBar_header__tLq_C {
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+
+.searchBar_yearFilter__kNX6Y {
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 150px;
+    border-color: lightgray;
+    border-width: 1px;
+    background-color: whitesmoke;
+}
+
+.searchBar_button__AQya5 {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #123C69;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+}

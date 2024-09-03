@@ -4,6 +4,7 @@ import { useSession } from 'next-auth/react';
 import styles from './mybookings.module.css';
 import Booking from '@/components/booking';
 import { fetchDataFromFB } from '@/utils/index';
+import SearchBar from '@/components/searchBar';
 
 const MyBookingsPage = () => {
   const { data: session, status } = useSession();
@@ -39,9 +40,13 @@ const MyBookingsPage = () => {
   
   return (
     <div className={styles.container}>
-      <h1 className={styles.header}>
-        Upcoming Bookings
-      </h1>
+      <div className={styles.headerContainer}>
+        <h1 className={styles.headerText}>
+          Upcoming Bookings
+        </h1>
+        <SearchBar />
+      </div>
+      
       {
         upcomingBookings.length > 0 ? 
         <div>
@@ -50,9 +55,13 @@ const MyBookingsPage = () => {
         <h3 className={styles.emptyBookings}>No upcoming bookings at the moment... </h3>
       }
       
-      <h1 className={styles.header}>
-        Past Bookings
-      </h1>
+      <div className={styles.headerContainer}>
+        <h1 className={styles.headerText}>
+          Past Bookings
+        </h1>
+        <SearchBar />
+      </div>
+      
       {
         pastBookings.length > 0 ?
         <div>
