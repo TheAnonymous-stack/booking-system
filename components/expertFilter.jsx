@@ -4,7 +4,7 @@ import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button} from "@n
 import { fetchDataFromFB } from '@/utils/index';
 import styles from './picker.module.css';
 
-const ExpertFilter = () => {
+const ExpertFilter = ({ isFilterReset, handleSelect }) => {
   const [experts, setExperts] = useState([]);
   const [expertSelected, setExpertSelected] = useState('Select Expert');
 
@@ -19,17 +19,25 @@ const ExpertFilter = () => {
     })
   },[]);
 
+  useEffect(() => {
+    if (isFilterReset) {
+      setExpertSelected('Select Expert');
+    }
+  },[isFilterReset]);
+
   return (
     <Dropdown>
       <DropdownTrigger>
-        <Button variant="faded">
+        <Button variant="faded" isDisabled={isFilterReset ? false : true}>
           {expertSelected}
         </Button>
       </DropdownTrigger>
       <DropdownMenu 
+        disabledKeys={isFilterReset ? [] : experts} 
         aria-label="Action event example" 
         onAction={(key) => {
           setExpertSelected(key);
+          handleSelect(key);
         
         }}
       >

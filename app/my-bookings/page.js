@@ -11,7 +11,8 @@ const MyBookingsPage = () => {
   const [upcomingBookings, setUpcomingBookings] = useState([]);
   const [pastBookings, setPastBookings] = useState([]);
   const [userName, setUserName] = useState(null);
-
+  const [isUpcomingFilterApplied, setIsUpcomingFilterApplied] = useState(false);
+  const [isPastFilterApplied, setIsPastFilterApplied] = useState(false);
 
   function loadData(booking) {
   setUpcomingBookings(upcomingBookings.filter((b) => (b.date !== booking.date || b.startTime !== booking.startTime || b.expert !== booking.expert)));
@@ -32,11 +33,31 @@ const MyBookingsPage = () => {
 
   useEffect(() => {
     getData();
+  
   },[status]);
 
   useEffect(() => {
     getData();
   },[]);
+
+  useEffect(() => {
+    if (userName && (!isUpcomingFilterApplied || !isPastFilterApplied)) {
+      const data = fetchDataFromFB('users');
+      data.then((res) => {
+        for (let u of res) {
+          if (u.name === userName) {
+            if (!isUpcomingFilterApplied) {
+              setUpcomingBookings(u.bookings.upcoming);
+            }
+            if (!isPastFilterApplied) {
+              setPastBookings(u.bookings.past);
+            }
+          break; 
+          }
+        }
+      })
+    }
+  },[isUpcomingFilterApplied, isPastFilterApplied])
   
   return (
     <div className={styles.container}>
@@ -44,13 +65,17 @@ const MyBookingsPage = () => {
         <h1 className={styles.headerText}>
           Upcoming Bookings
         </h1>
-        <SearchBar />
+        <SearchBar 
+          bookings={upcomingBookings}
+          handleSearch={setUpcomingBookings} 
+          updateFilterStatus={setIsUpcomingFilterApplied}
+        />
       </div>
       
       {
         upcomingBookings.length > 0 ? 
         <div>
-          {upcomingBookings.map((b, index) => <Booking key={index} loadData={loadData} isPast={false} userName={userName} expert={b.expert} startTime={b.startTime} endTime={b.endTime} date={b.date} notes={b.notes}/>)}
+          {upcomingBookings.reverse().map((b, index) => <Booking key={index} loadData={loadData} isPast={false} userName={userName} expert={b.expert} startTime={b.startTime} endTime={b.endTime} date={b.date} notes={b.notes}/>)}
         </div> :
         <h3 className={styles.emptyBookings}>No upcoming bookings at the moment... </h3>
       }
@@ -59,14 +84,18 @@ const MyBookingsPage = () => {
         <h1 className={styles.headerText}>
           Past Bookings
         </h1>
-        <SearchBar />
+        <SearchBar 
+          bookings={pastBookings}
+          handleSearch={setPastBookings}
+          updateFilterStatus={setIsPastFilterApplied}
+        />
       </div>
       
       {
         pastBookings.length > 0 ?
         <div>
           {
-            pastBookings.map((b, index) => <Booking key={index} loadData={loadData} isPast={true} userName={userName} expert={b.expert} startTime={b.startTime} endTime={b.endTime} date={b.date} notes={b.notes} status={b.status}/>) 
+            pastBookings.reverse().map((b, index) => <Booking key={index} loadData={loadData} isPast={true} userName={userName} expert={b.expert} startTime={b.startTime} endTime={b.endTime} date={b.date} notes={b.notes} status={b.status}/>) 
           }
         </div>
         :

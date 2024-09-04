@@ -17,6 +17,12 @@
       "static/chunks/main-app.js",
       "static/css/app/my-bookings/page.css",
       "static/chunks/app/my-bookings/page.js"
+    ],
+    "/book-appointment/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/book-appointment/page.css",
+      "static/chunks/app/book-appointment/page.js"
     ]
   }
 }

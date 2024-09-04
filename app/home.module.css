@@ -40,8 +40,8 @@
     transform: translate(-25%, -25%);
     font-size: 60px;
     font-weight: 600;
-    color: white;
-    text-shadow: 2px 4px 10px #AC3B61;
+    color: #123C69;
+    text-shadow: 1px 4px 5px #AC3B61;
     
 
 }
@@ -51,7 +51,7 @@
     top: 49%;
     left: 23%;
     font-size: 20px;
-    color: white;
+    color: #123C69;
     text-shadow: 2px 4px 10px #AC3B61;
 }
 
@@ -88,7 +88,7 @@
     left: 45%;
     padding: 10px;
     border-radius: 20px;
-    color: white;
-    border-color: white;
+    color: #123C69;
+    border-color: #123C69;
     border-width: 1px;
 }

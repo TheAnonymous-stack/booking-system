@@ -38,3 +38,7 @@
     font-weight: 500;
     font-size: 15px;
 }
+
+.disabledYearFilter {
+    opacity: 0.5;
+}
