@@ -1,6 +1,6 @@
 import "./globals.css";
 import Navbar from '../components/navbar';
-import SessionWrapper from '../components/SessionWrapper';
+import SessionWrapper from '../components/sessionWrapper';
 
 export default function RootLayout({ children }) {
   return (
