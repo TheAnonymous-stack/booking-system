@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Project Overview
 
-First, run the development server:
+This is a web app that serves as a booking tool between small businesses and their clients. It offers a straightforward platform for scheduling and managing appointments. The UI/UX design leans towards a minimalistic and simple aesthetic. Users can explore the functionalities of the web upon signing in with their Google account. In addition to the availabilities of the experts being updated in real time, users can see immediate status change of a booking when they finish or cancel one. There is also a search bar where users are able to filter their bookings to be displayed based on the month, year, and the expert of choice. 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Technology Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- NextJS
+- NextAuth
+- Google Cloud
+- Google Firestore Database
+- Github
+- Vercel
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Sign in with a Google Account
+- Navigate to "Book Appointment" tab on Navigation Bar or press "Get Started!" button on Home Page
+- Select a date on the calendar
+- Select a timeslot from the availabilities of the experts
+- Select a duration of choice for the appointment (ranging from 30 minutes to 2 hours depending on the selected expert's availabilities)
+- View Booking Summary then hit 'Confirm' to schedule the booking or 'Edit Info' to make changes to the booking
+- View upcoming and past bookings on 'My Bookings' page
+- Update status of upcoming bookings as desired
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
