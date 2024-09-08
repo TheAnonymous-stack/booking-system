@@ -79,13 +79,16 @@ function checkNewUser(name) {
             }
         }
         if (!userFound) {
-            const docRef = await addDoc(collection(db, 'users'), {
+            const tempDocRef = await addDoc(collection(db, 'users'), {
                 name: name,
-                id: docRef.id,
                 bookings: {
                     'past':[],
                     'upcoming': []
                 }
+            });
+            const docRef = doc(db, 'users', tempDocRef.id);
+            await updateDoc(docRef, {
+                id: tempDocRef.id
             })
         }
     })
