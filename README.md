@@ -12,7 +12,7 @@ This is a web app that serves as a booking tool between small businesses and the
 - Github
 - Vercel
 
-## Usage
+## Web App Usage Instructions
 
 - Sign in with a Google Account
 - Navigate to "Book Appointment" tab on Navigation Bar or press "Get Started!" button on Home Page
@@ -23,3 +23,7 @@ This is a web app that serves as a booking tool between small businesses and the
 - View upcoming and past bookings on 'My Bookings' page
 - Update status of upcoming bookings as desired
 
+## Repo Clone Usage Instructions
+
+- Users must generate their own OAuth IDs for Google Authentication
+- Users must create their own Firestore database and update the Firebase Configurations
